@@ -10,7 +10,7 @@ services:
         command: --mysql-native-password=ON
         restart: unless-stopped
         volumes:
-            - ./db_data:/usr/data
+            - ./db_data:/var/lib/mysql
         ports:
             - 3306:3306
     web:
