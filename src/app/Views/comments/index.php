@@ -64,7 +64,7 @@
                 <div class="comment-box shadow-sm" id="comment-<?= esc($comment['id']) ?>">
                     <div class="comment-header">
                         <strong><?= esc($comment['name']) ?></strong>
-                        <span><?= date('d.m.Y', strtotime($comment['date'])) ?></span>
+                        <span style="margin-right:5rem;" ><?= date('d.m.Y', strtotime($comment['date'])) ?></span>
                     </div>
                     <div class="comment-text"><?= esc($comment['text']) ?></div>
                     <button class="btn btn-sm btn-outline-danger delete-btn" data-id="<?= esc($comment['id']) ?>">Удалить</button>
